@@ -1,0 +1,112 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+      font-size: 20px;
+    background-color: #141519;
+    color: #fff;
+  }
+  
+  .nav a {
+    color: #fff;
+    margin: 0 10px;
+   text-align: center;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+ 
+  
+  .btnh {
+    padding: 10px 19px;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    border-radius: 87px;
+    background: black;
+    cursor: pointer;
+    margin: 0%;
+    
+  }
+  .btnh::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    border-radius: 87px;
+    background-color: black;
+    z-index: -1;
+    transition: 200ms;
+  }
+  .btnh::after {
+    content: attr(data);
+    font-size: 13px;
+    font-weight: bold;
+    background: linear-gradient(-45deg, #ab23d5, #c456cb, #ee7752);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 200ms;
+    
+  }
+  .btnh:hover::before {
+    opacity: 0%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+  .btnh:hover::after{
+    color: white;
+  }
+
+  
+  .btnhd {
+    padding: 10px 19px;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    border-radius: 87px;
+    background: linear-gradient(-45deg, #ab23d5, #c456cb, #ee7752);
+    cursor: pointer;
+    margin: 0%;
+
+  }
+  .btnhd::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    border-radius: 87px;
+    background-color:linear-gradient(-45deg, #ab23d5, #c456cb, #ee7752);
+    z-index: -1;
+    transition: 200ms;
+  }
+  .btnhd::after {
+    content: attr(data);
+    font-size: 13px;
+    font-weight: bold;
+    background: black;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 200ms;
+    
+  }
+  .btnhd:hover::before {
+    opacity: 0%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+  }
+  .btnhd:hover::after{
+    color: white;
+  }
+
+  
